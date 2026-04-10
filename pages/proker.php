@@ -16,7 +16,10 @@ $semua_proker = query($query);
 </head>
 <body>
     <nav class="navbar">
-        <h2>Arcaviva.</h2>
+        <div class="logo-container">
+            <img src="../assets/images/logofix_lagi.png" alt="Logo" class="logo-img">
+            <h2>Arcaviva.</h2>
+        </div>
         <ul class="nav-links">
             <li><a href="home.php">Kembali</a></li>
         </ul>

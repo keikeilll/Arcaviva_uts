@@ -15,7 +15,10 @@ $proker = query("SELECT * FROM proker");
 </head>
 <body>
     <nav class="navbar">
-        <h2>Admin Tools</h2>
+        <div class="logo-container">
+            <img src="../assets/images/logofix_lagi.png" alt="Logo" class="logo-img">
+            <h2>Admin Tools</h2>
+        </div>
         <ul class="nav-links">
             <li><a href="dashboard.php">Kelola Proker</a></li>
             <li><a href="kelola_pengumuman.php" style="color: #f7e6a1;">Pengumuman</a></li> <li><a href="../pages/home.php">Tampilan Publik</a></li>
