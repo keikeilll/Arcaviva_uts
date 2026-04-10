@@ -1,3 +1,3 @@
 function konfirmasiHapus() {
-    return confirm("Yakin ingin menghapus proker ini?");
+    return confirm('Beneran mau hapus proker ini?');
 }

@@ -39,6 +39,8 @@ function tambah_proker($data) {
 
 function hapus_proker($id) {
     global $conn;
+    mysqli_query($conn, "DELETE FROM arsip WHERE id_proker = $id");
+    mysqli_query($conn, "DELETE FROM timeline WHERE id_proker = $id");
     mysqli_query($conn, "DELETE FROM proker WHERE id_proker = $id");
     return mysqli_affected_rows($conn);
 }
