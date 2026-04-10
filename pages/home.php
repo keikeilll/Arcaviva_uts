@@ -23,7 +23,7 @@ $proker_dekat = query("SELECT * FROM proker WHERE status != 'Selesai' ORDER BY t
 <body>
     <nav class="navbar">
         <div class="logo-container">
-            <img src="../assets/images/logofix(lagi).png" alt="Logo" class="logo-img">
+            <img src="../assets/images/logofix_lagi.png" alt="Logo" class="logo-img">
             <h2>Arcaviva.</h2>
         </div>
         <ul class="nav-links">

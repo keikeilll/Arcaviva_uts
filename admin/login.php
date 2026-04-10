@@ -28,7 +28,9 @@ if (isset($_POST["login"])) {
     <div class="container" style="max-width: 400px; margin: auto; margin-top: 100px;">
         <div class="card">
             <div style="text-align: center; margin-bottom: 10px;">
-                <img src="../assets/images/logofix(lagi).png" alt="Logo Arcaviva" style="width: 80px; height: 80px; object-fit: contain;">
+                <img src="../assets/images/logofix_lagi.png" alt="Logo Arcaviva" style="width: 80px; height: 80px; object-fit: contain;">
+                <h2 style="color: #f7e6a1; margin-bottom: 5px;">Login Admin</h2>
+                <p style="color: #bfc0d1; font-size: 14px; line-height: 1.5;">Silakan masuk untuk mengelola data program kerja dan arsip Arcaviva.</p>
             </div>
             <?php if(isset($error)) { echo "<p style='color: red;'>Username atau Password salah</p>"; } ?>
             <form action="" method="post">
