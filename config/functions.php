@@ -43,12 +43,12 @@ function hapus_proker($id) {
     return mysqli_affected_rows($conn);
 }
 function format_tanggal($tanggal) {
-    $bulan = array (
-        1 =>   'Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'
-    );
-    
+    if (empty($tanggal) || $tanggal == '0000-00-00') {
+        return "Belum ditentukan";
+    }
+
+    $bulan = array ( 1 =>   'Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember' );
     $pecahkan = explode('-', $tanggal);
-    
     return $pecahkan[2] . ' ' . $bulan[ (int)$pecahkan[1] ] . ' ' . $pecahkan[0];
 }
 ?>
